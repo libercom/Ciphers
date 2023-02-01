@@ -33,6 +33,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Numerics" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -41,9 +42,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="KeyPair.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="IRSAEncryptorDecryptor.cs" />
+    <Compile Include="IRSAKeyGenerator.cs" />
     <Compile Include="RSA.cs" />
+    <Compile Include="RSAEncryptorDecryptor.cs" />
+    <Compile Include="RSAKeyGenerator.cs" />
+    <Compile Include="RSAKeyPair.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RSAKey.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Shared\Shared.csproj">
